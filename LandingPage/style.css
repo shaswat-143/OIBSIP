@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poltawski Nowy', serif;
+}
+
+/* Body */
+body::before {
+    background-image: url("Eiffel-Tower-Paris-France-the-river-Seine-boats-blue-sky_1920x1080.jpg");
+    background-position: 30% 20%;
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    top: 67px;
+    left: 0;
+    right: 0;
+    height: 91vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Header and Navigation bar */
+#header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 3px 6px rgb(18 86 120);
+}
+
+#nav-logo {
+    margin: 5px 5px;
+}
+
+#nav-logo img {
+    height: 40px;
+    margin: 5px 5px;
+}
+
+#header ul {
+    display: flex;
+    position: absolute;
+    left: 34%;
+}
+
+#header::before {
+    content: "";
+    background-color: rgb(206, 97, 97);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#header ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#header ul li a {
+    color: rgb(7, 7, 7);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+#header ul li a:hover {
+    color: rgb(4, 34, 115);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#name {
+    justify-content: start;
+    align-content: start;
+    position: absolute;
+    left: 95px;
+}
+
+.joy {
+    color: #aa2817;
+}
+
+.land {
+    color: rgb(13 7 112);
+}
+
+#btn1 {
+    border-radius: 20px;
+    position: absolute;
+    left: 90%;
+    width: 125px;
+    color: rgb(10, 10, 10);
+    background-color: rgba(235, 152, 131, 0.99);
+    padding: 4px 8px;
+    border-style: none;
+    border-color: rgb(117, 153, 244);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn1:hover {
+    color: rgb(2 23 252);
+    background: rgb(92 188 239 / 99%);
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    width: 750px;
+    margin: auto;
+}
+
+.head h2 {
+    position: relative;
+    top: 30px;
+    font-size: 1.9rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 1px 6px 6px rgb(78 85 90);
+    top: 50%;
+    margin: auto;
+    margin-top: 50px;
+    left: 35px;
+    background-color: #f6f9facf;
+}
+
+#box-heading {
+    justify-content: center;
+    display: inline-block;
+    width: 500px;
+    padding: 0px 150px;
+    font-weight: 700;
+    color: rgb(8, 8, 9)
+}
+
+.box div input,
+select {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(232, 233, 240);
+    height: 30px;
+    color: rgb(8, 8, 8);
+}
+
+#n {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+::placeholder {
+    color: rgb(9, 9, 9);
+}
+
+#Destination {
+    display: inline;
+    padding: 0px 10px;
+}
+
+#date {
+    display: inline;
+    padding: 0px 10px;
+}
+
+#pkg {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#btn2 {
+    border-radius: 20px;
+    width: 89%;
+    margin-left: 27px;
+    color: rgb(4, 34, 115);
+    background-color: rgba(192, 226, 91, 0.99);
+    padding: 5px 5px;
+    border-style: none;
+    border-color: rgb(117, 153, 244);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    color: rgb(2 23 252);
+    background: rgb(92 188 239 / 99%);
+}
+
+.box span {
+    color: rgb(3, 3, 3);
+    font-weight: bold;
+    position: relative;
+    margin-left: 20px;
+}
+
+.box select,
+input {
+    text-align: center;
+    align-content: center;
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+#n input {
+    position: relative;
+    width: 371px;
+    padding: 2px 50px;
+    padding-bottom: 3px;
+}
+
+#Destination select {
+    position: relative;
+    width: 329px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+#date input {
+    position: relative;
+    width: 345px;
+    padding: 2px 50px;
+    padding-bottom: 3px;
+}
+
+#pkg select {
+    position: relative;
+    width: 298px;
+    padding: 2px 50px;
+    padding-bottom: 4px;
+}
