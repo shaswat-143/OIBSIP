@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;    
+}
+
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    height: 100vh;
+    color: rgb(0, 56, 105);
+    z-index: 100;
+}
+
+.back{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.back-img{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("img.webp");
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    background-color: rgb(196 216 244 / 93%);
+    width: 600px;
+    border-radius: 15px;
+    z-index: 1000;
+    opacity: 0.9;
+    box-shadow: 0px 3px 6px rgb(2 34 67);
+}
+
+.container form div{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container form div label{
+    font-size: 27px;
+    font-weight: 700;
+    color: rgb(14 1 88);
+}
+
+#result{
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px; 
+}
+
+.ip_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ip_temp, #temp_sel, #submit, #reset{
+    padding: 0px 5px;
+    width: 175px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #d58d3b;    
+    background-color: rgb(93, 234, 217);
+}
+
+#ip_temp{
+    margin-right: 20px;
+}
+
+#submit, #reset{
+    width: 100px;
+}
+
+.container form div input{
+    display: flex;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(43, 119, 226);
+    border-radius: 15px;
+}
+
+#submit:hover, #reset:hover{
+    background-color: rgb(173 190 249);
+}
